@@ -7,6 +7,20 @@ module.exports = {
             test: /\.css$/,
 	    use: ExtractTextPlugin.extract("css-loader", "style-loader")
 	},
+
+	{
+	    test: /\.(png|jpg|jpeg|gif)$/,
+	    use: [
+		{
+		    loader: 'file-loader',
+		    options: {
+			publicPath: '',
+			outputPath: 'build/',
+			useRelativePath: true
+		    }
+		}
+	    ]
+	}
     ]
     
 };
