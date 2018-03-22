@@ -12,13 +12,16 @@ module.exports = {
 	    test: /\.(png|jpg|jpeg|gif)$/,
 	    use: [
 		{
-		    loader: 'file-loader',
+		    loader: 'url-loader',
 		    options: {
+			name: '[name].[ext]',
+			limit: 8192,
 			publicPath: '',
 			outputPath: 'build/',
 			useRelativePath: true
 		    }
 		}
+	
 	    ]
 	}
     ]
