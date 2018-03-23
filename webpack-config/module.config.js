@@ -9,7 +9,7 @@ module.exports = {
 	},
 
 	{
-	    test: /\.(png|jpg|jpeg|gif)$/,
+	    test: /\.(png|jpg|jpeg|gif|webp)$/,
 	    use: [
 		{
 		    loader: 'url-loader',
@@ -19,6 +19,14 @@ module.exports = {
 			publicPath: '',
 			outputPath: 'build/',
 			useRelativePath: true
+		    }
+		},
+		{
+		    loader: 'img-loader',
+		    options: {
+			pngquant: {
+			    quality: 80
+			}
 		    }
 		}
 	

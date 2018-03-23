@@ -5,3 +5,9 @@ body {background: #ccc;}
     height: 50px;
     background: url('../../public-resource/imgs/no-login.png') no-repeat;
 }
+
+.bg {
+    width: 1000px;
+    height: 1000px;
+    background: url('../../public-resource/imgs/bj-wd.jpg.webp') no-repeat;
+}
