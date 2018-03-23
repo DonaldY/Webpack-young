@@ -11,3 +11,8 @@ body {background: #ccc;}
     height: 1000px;
     background: url('../../public-resource/imgs/bj-wd.jpg.webp') no-repeat;
 }
+
+.font {
+    font-size: 22px;
+    color: red;
+}

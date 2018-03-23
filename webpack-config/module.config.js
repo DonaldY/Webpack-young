@@ -22,6 +22,7 @@ module.exports = {
 		    }
 		},
 		{
+		    // Ñ¹Ëõ
 		    loader: 'img-loader',
 		    options: {
 			pngquant: {
@@ -30,6 +31,23 @@ module.exports = {
 		    }
 		}
 	
+	    ]
+	},
+
+	{
+	    // iconfont
+	    test:/\.(eot|woff2|woff|ttf|svg)$/,
+	    use: [
+		{
+		    loader: 'url-loader',
+		    options: {
+			name: '[name].[ext]',
+			limit: 8192,
+			publicPath: '',
+			outputPath: 'build/',
+			useRelativePath: true
+		    }
+		}
 	    ]
 	}
     ]
