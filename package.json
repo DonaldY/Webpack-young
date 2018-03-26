@@ -19,8 +19,14 @@
     "url-loader": "^1.0.1"
   },
   "scripts": {
+	"build": "./node_modules/.bin/webpack --progress --colors --bail",
+    "dev": "./node_modules/.bin/webpack --progress --colors --config ./webpack.dev.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DonaldY/Webpack-young.git"
+  },
+  "author": "Donald Yang",
   "license": "ISC"
 }
