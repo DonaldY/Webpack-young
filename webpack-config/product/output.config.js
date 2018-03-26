@@ -1,4 +1,4 @@
-var dirVars = require('./base/dir-vars.config.js');
+var dirVars = require('../base/dir-vars.config.js');
 
 module.exports = {
     path: dirVars.buildDir,
