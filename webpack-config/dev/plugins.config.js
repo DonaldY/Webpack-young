@@ -39,7 +39,7 @@ pageArr.forEach((page) => {
 	const htmlPlugin = new HtmlWebpackPlugin({
 	    filename: `/WEB-INF/pages/${page}.html`,
 	    template: path.resolve(dirVars.pagesDir, `./${page}.html`),
-	    chunks: ['commons/common', page], // 公共文件需先导入
+	    chunks: ['js/commons/common', page], // 公共文件需先导入
 	    xhtml: true
 	});
 	configPlugins.push(htmlPlugin);

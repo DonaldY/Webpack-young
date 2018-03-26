@@ -16,8 +16,8 @@ module.exports = {
 		    options: {
 			name: '[name].[ext]',
 			limit: 8192,
-			publicPath: '',
-			outputPath: 'build/',
+			publicPath: '../../imgs/',
+			outputPath: 'imgs/',
 			useRelativePath: true
 		    }
 		},
@@ -43,8 +43,8 @@ module.exports = {
 		    options: {
 			name: '[name].[ext]',
 			limit: 8192,
-			publicPath: '',
-			outputPath: 'build/',
+			publicPath: '../../fonts/',
+			outputPath: 'fonts/',
 			useRelativePath: true
 		    }
 		}
