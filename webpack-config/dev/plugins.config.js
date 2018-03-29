@@ -24,6 +24,10 @@ var configPlugins = [
  
     /* ³éÈ¡³öchunkµÄcss */
     new ExtractTextPlugin('css/[name].css'),
+
+    new webpack.NamedModulesPlugin(),
+    
+    new webpack.HotModuleReplacementPlugin()
     
 ];
 

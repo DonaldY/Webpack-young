@@ -1,4 +1,4 @@
-require('./npm-scripts/before-build.js');
+require('./npm-scripts/dev-before-build.js');
 
 var config = {
     entry: require('./webpack-config/entry.config.js'),

@@ -3,6 +3,18 @@ var ExtractTextPlugin   = require('extract-text-webpack-plugin');
 
 module.exports = {
     rules: [
+
+	{
+	    test: /\.js$/,
+	    include: dirVars.srcRootDir,
+	    loader: 'babel-loader',
+	    options: {
+		presets: [['env', { loose: true }]],
+		cacheDirectory: true,
+		plugins: ['transform-runtime']
+	    }
+	},
+	
 	{
             test: /\.css$/,
 	    use: ExtractTextPlugin.extract("css-loader", "style-loader")
