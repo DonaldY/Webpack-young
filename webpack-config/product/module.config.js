@@ -12,7 +12,7 @@ module.exports = {
 	    options: {
 		presets: [['env', { loose: true }]],
 		cacheDirectory: true,
-		plugins: ['transform-runtime']
+		plugins: ['transform-runtime', 'lodash']
 	    }
 	},
 	

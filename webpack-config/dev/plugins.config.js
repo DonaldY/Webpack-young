@@ -27,7 +27,10 @@ var configPlugins = [
 
     new webpack.NamedModulesPlugin(),
     
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+
+    new webpack.optimize.UglifyJsPlugin()
+    
     
 ];
 
