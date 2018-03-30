@@ -21,5 +21,4 @@ moduleExports.buildDir = path.resolve(moduleExports.staticRootDir, '../src/main/
 // 另个生成文件目录
 moduleExports.privateBuildDir = path.resolve(moduleExports.buildDir, './WEB-INF');
 
-
 module.exports = moduleExports;
