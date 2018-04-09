@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     publicPath: '/',
-    contentBase: './',
+    contentBase: './build',
     host: 'localhost',
     port: 8081, // 默认8080
     inline: true, // 可以监控js变化

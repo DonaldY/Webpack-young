@@ -1,0 +1,15 @@
+.demo-class {
+    background: #ccc;
+}
+
+.demo-no-div-class {
+    background: red;
+}
+
+.demo-text {
+    color: green;
+}
+
+.demo_text {
+    color: blue;
+}
