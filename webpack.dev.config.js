@@ -13,7 +13,9 @@ var config = {
 
     externals: require('./webpack-config/externals.config.js'),
 
-    devServer: require('./webpack-config/dev/devServer.config.js')
+    devServer: require('./webpack-config/dev/devServer.config.js'),
+
+    devtool: 'cheap-module-source-map'
 };
 
 module.exports = config;

@@ -5,8 +5,15 @@ const moduleConfig = require('../inherit/module.config.js');
 moduleConfig.rules.push({
     test: /\.css$/,
     use: [
-	'style-loader',
-	'css-loader'
+	{
+	    loader: 'style-loader'
+	},
+	{
+	    loader: 'css-loader',
+	    options: {
+		sourceMap: true
+	    }
+	}
     ]
 });
 
