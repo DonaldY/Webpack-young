@@ -8,7 +8,8 @@ module.exports = {
 	    loader: 'babel-loader',
 	    options: {
 		presets: ['env'],
-		cacheDirectory: true
+		cacheDirectory: true,
+		plugins: ['transform-runtime']
 	    }
 	},
 	
