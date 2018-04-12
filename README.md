@@ -6,5 +6,7 @@
 
 
 > 问题：
-> 1. purifycss 还有些问题，时好时坏
-> 校验 https://uncss-online.com/
+> 1. `DeprecationWarning: Chunk.modules is deprecated. Use Chunk.getNumberOfModules/mapModules/forEachModule/containsModule instead.`
+> 在导入purify-css等后出现的warming，还未解决
+> 相关资料：https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/529
+> https://www.jianshu.com/p/f30401c0b413
