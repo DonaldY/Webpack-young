@@ -3,6 +3,16 @@ var dirVars = require('../base/dir-vars.config.js');
 module.exports = {
     rules: [
 	{
+	    test: /\.js$/,
+	    include: dirVars.srcRootDir,
+	    loader: 'babel-loader',
+	    options: {
+		presets: ['env'],
+		cacheDirectory: true
+	    }
+	},
+	
+	{
 	    test: /\.(png|jpg|jpeg|gif|webp)$/,
 	    use: [
 		{
