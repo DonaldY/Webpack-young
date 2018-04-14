@@ -28,6 +28,10 @@ pluginsConfig.push(
     })
 );
 
+pluginsConfig.push(new webpack.DefinePlugin({
+    IS_PRODUCTION: true
+}));
+
 pluginsConfig.push(
     new webpack.optimize.UglifyJsPlugin()
 );

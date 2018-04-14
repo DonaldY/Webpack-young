@@ -10,6 +10,12 @@
       This is DEMO_CLASS_DIV.
     </div>
 
+    <% if (!IS_PRODUCTION) { %>
+    <span >dev</span>
+    <% } else { %>
+    <span >production</span>
+    <% } %>
+
     <%= require('html-loader!../../public-resource/components/copyright/copyright.html') %>
   </body>
   
