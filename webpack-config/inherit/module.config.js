@@ -25,6 +25,18 @@ module.exports = {
 		plugins: ['transform-runtime']
 	    }
 	},
+
+	// {
+	//     test: /\.html$/,
+	//     use: [
+	// 	{
+	// 	    loader: 'html-loader',
+	// 	    options: {
+	// 		attrs: ['img:src', 'img:data-src']
+	// 	    }
+	// 	}
+	//     ]
+	// },
 	
 	{
 	    test: /\.(png|jpg|jpeg|gif|webp)$/,
@@ -34,7 +46,7 @@ module.exports = {
 		    options: {
 			name: '[name].[ext]',
 			limit: 8192,
-			publicPath: '../../imgs/',
+			publicPath: '../../../imgs/',
 			outputPath: 'imgs/'
 		    }
 		},
@@ -60,7 +72,7 @@ module.exports = {
 		    options: {
 			name: '[name].[ext]',
 			limit: 8192,
-			publicPath: '../../fonts/',
+			publicPath: '../../../fonts/',
 			outputPath: 'fonts/',
 			useRelativePath: true
 		    }
