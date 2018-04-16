@@ -25,6 +25,31 @@ var configPlugins = [
     
 ];
 
+/* 
+   为了更好配置多页面
+
+   一个模块下有多个页面
+
+   项目源码：
+   pages # src/pages/
+     ├─alert # 模块-1
+     |  └─alert
+     │      ├─alert.html
+     │      ├─alert.css
+     │      └─alert.js
+     └─index # 模块-2
+        ├─index # 子模块-1
+        └─login # 子模块-2
+
+    编译后：
+    WEB-INFO 
+      └─pages 
+         ├─alert 
+         │  └─index.html # 具体页面
+         └─index 
+             ├─index.html # 具体页面
+             └─login.html # 具体页面
+ */
 
 function isHtmlFile(str)  {  
    var objRegExp = /\.html/;
