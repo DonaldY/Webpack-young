@@ -35,8 +35,7 @@ module.exports = {
 			name: '[name].[ext]',
 			limit: 8192,
 			publicPath: '../../imgs/',
-			outputPath: 'imgs/',
-			useRelativePath: true
+			outputPath: 'imgs/'
 		    }
 		},
 		{

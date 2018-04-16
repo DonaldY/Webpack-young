@@ -14,3 +14,14 @@
     color: blue;
 }
 
+.img-div {
+    background: url('../../public-resource/imgs/no-login.png') no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.img-div2 {
+    background: url('../../public-resource/imgs/bj-wd.jpg.webp') no-repeat;
+    height: 100px;
+    width: 100px;
+}
