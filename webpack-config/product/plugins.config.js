@@ -10,23 +10,23 @@ const pluginsConfig = require('../inherit/plugins.config.js');
 pluginsConfig.push(
     /* 抽取出chunk的css */
     new ExtractTextPlugin({
-	filename: '/css/[name].css',
+	filename: '/css/[name].[hash:6].css',
 	allChunks: true
     })
 );
 
-pluginsConfig.push(
-    new PurifyCssPlugin({
-	paths: glob.sync([
-	    path.join(dirVars.pagesDir, '/**/*.html')
-	])
-	/* 查看压缩信息 */
-	/* purifyOptions: {
-            info: true,
-            minify: false
-	} */
-    })
-);
+// pluginsConfig.push(
+//     new PurifyCssPlugin({
+// 	paths: glob.sync([
+// 	    path.join(dirVars.pagesDir, '/**/*.html')
+// 	]),
+// 	/* 查看压缩信息 */
+// 	purifyOptions: {
+//             info: true,
+//             minify: false
+// 	}
+//     })
+// );
 
 pluginsConfig.push(new webpack.DefinePlugin({
     IS_PRODUCTION: true

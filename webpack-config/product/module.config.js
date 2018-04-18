@@ -6,11 +6,17 @@ const moduleConfig = require('../inherit/module.config.js');
 moduleConfig.rules.push({
     test: /\.css$/,
 
-    use: ExtractTextPlugin.extract([
-	{
-	    loader: 'css-loader'
-	}
-    ])
+    use: ExtractTextPlugin.extract({
+        use:[
+            {
+                loader: 'css-loader',
+                options:{
+                    minimize: true //css—πÀı
+                }
+            }
+        ],
+	fallback: "style-loader"
+    })
 });
 
 
