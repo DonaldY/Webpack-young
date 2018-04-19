@@ -1,4 +1,4 @@
-var path = require('path');
+锘縱ar path = require('path');
 var dirVars = require('./base/dir-vars.config.js');
 var pageArr = require('./base/page-entries.config.js');
 var configEntry = {};
@@ -8,7 +8,7 @@ function isJsFile(str)  {
    return objRegExp.test(str);  
 }  
 
-/* enty以js为入口，so，过滤js */
+/* enty浠s涓哄叆鍙ｏ紝so锛岃繃婊s */
 pageArr.forEach((page) => {
     if (isJsFile(page)) {
 	page = page.substring(0, page.lastIndexOf('.'));

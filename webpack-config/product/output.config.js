@@ -1,8 +1,8 @@
-var dirVars = require('../base/dir-vars.config.js');
+ï»¿var dirVars = require('../base/dir-vars.config.js');
 
 module.exports = {
     path: dirVars.buildDir,
-    publicPath: '${ctx_path}/',  // ÅäºÏºó¶ËÉú³É `localhost:8080/XXXX/`
-    filename: 'js/[name].[hash:6].js',    // [name]±íÊ¾entryÃ¿Ò»ÏîÖĞµÄkey£¬ÓÃÒÔÅúÁ¿Ö¸¶¨Éú³ÉºóÎÄ¼şµÄÃû³Æ
+    publicPath: '${ctx_path}/',  // é…åˆåç«¯ç”Ÿæˆ `localhost:8080/XXXX/`
+    filename: 'js/[name].[hash:6].js',    // [name]è¡¨ç¤ºentryæ¯ä¸€é¡¹ä¸­çš„keyï¼Œç”¨ä»¥æ‰¹é‡æŒ‡å®šç”Ÿæˆåæ–‡ä»¶çš„åç§°
     chunkFilename: '[id].[chunkhash].bundle.js'
 };

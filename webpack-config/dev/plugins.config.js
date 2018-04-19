@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+﻿var webpack = require('webpack');
 
 const pluginsConfig = require('../inherit/plugins.config.js');
 

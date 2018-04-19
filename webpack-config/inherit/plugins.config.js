@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+ï»¿var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
@@ -8,7 +8,7 @@ var pageArr = require('../base/page-entries.config.js');
 
 var configPlugins = [
 
-    /* È«¾Öshimming */
+    /* å…¨å±€shimming */
     new webpack.ProvidePlugin({
 	$: 'jquery',
 	jQuery: 'jquery',
@@ -16,39 +16,39 @@ var configPlugins = [
 	'window.$': 'jquery'
     }),
     
-    /* ³éÈ¡³öËùÓÐÍ¨ÓÃµÄ²¿·Ö */
+    /* æŠ½å–å‡ºæ‰€æœ‰é€šç”¨çš„éƒ¨åˆ† */
     new webpack.optimize.CommonsChunkPlugin({
-	name: 'commons/common',      // ÐèÒª×¢ÒâµÄÊÇ£¬chunkµÄname²»ÄÜÏàÍ¬£¡£¡£¡
-	filename: 'js/[name].js',
+	name: 'commons/common',      // éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œchunkçš„nameä¸èƒ½ç›¸åŒï¼ï¼ï¼
+	filename: 'js/[name].[hash:6].js',
 	minChunks: 4
     }),
     
 ];
 
 /* 
-   ÎªÁË¸üºÃÅäÖÃ¶àÒ³Ãæ
+   ä¸ºäº†æ›´å¥½é…ç½®å¤šé¡µé¢
 
-   Ò»¸öÄ£¿éÏÂÓÐ¶à¸öÒ³Ãæ
+   ä¸€ä¸ªæ¨¡å—ä¸‹æœ‰å¤šä¸ªé¡µé¢
 
-   ÏîÄ¿Ô´Âë£º
+   é¡¹ç›®æºç ï¼š
    pages # src/pages/
-     ©À©¤alert # Ä£¿é-1
-     |  ©¸©¤alert
-     ©¦      ©À©¤alert.html
-     ©¦      ©À©¤alert.css
-     ©¦      ©¸©¤alert.js
-     ©¸©¤index # Ä£¿é-2
-        ©À©¤index # ×ÓÄ£¿é-1
-        ©¸©¤login # ×ÓÄ£¿é-2
+     â”œâ”€alert # æ¨¡å—-1
+     |  â””â”€alert
+     â”‚      â”œâ”€alert.html
+     â”‚      â”œâ”€alert.css
+     â”‚      â””â”€alert.js
+     â””â”€index # æ¨¡å—-2
+        â”œâ”€index # å­æ¨¡å—-1
+        â””â”€login # å­æ¨¡å—-2
 
-    ±àÒëºó£º
+    ç¼–è¯‘åŽï¼š
     WEB-INFO 
-      ©¸©¤pages 
-         ©À©¤alert 
-         ©¦  ©¸©¤index.html # ¾ßÌåÒ³Ãæ
-         ©¸©¤index 
-             ©À©¤index.html # ¾ßÌåÒ³Ãæ
-             ©¸©¤login.html # ¾ßÌåÒ³Ãæ
+      â””â”€pages 
+         â”œâ”€alert 
+         â”‚  â””â”€index.html # å…·ä½“é¡µé¢
+         â””â”€index 
+             â”œâ”€index.html # å…·ä½“é¡µé¢
+             â””â”€login.html # å…·ä½“é¡µé¢
  */
 
 function isHtmlFile(str)  {  
@@ -62,7 +62,7 @@ pageArr.forEach((page) => {
 	const htmlPlugin = new HtmlWebpackPlugin({
 	    filename: `/WEB-INF/pages/${page}.html`,
 	    template: path.resolve(dirVars.pagesDir, `./${page}.html`),
-	    chunks: ['commons/common', page], // ¹«¹²ÎÄ¼þÐèÏÈµ¼Èë
+	    chunks: ['commons/common', page], // å…¬å…±æ–‡ä»¶éœ€å…ˆå¯¼å…¥
 	    xhtml: true
 	});
 	configPlugins.push(htmlPlugin);

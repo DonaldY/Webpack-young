@@ -1,24 +1,24 @@
-var path = require('path');
+ï»¿var path = require('path');
 var moduleExports = {};
 
-// Ô´ÎÄ¼şÄ¿Â¼
-moduleExports.staticRootDir = path.resolve(__dirname, '../../'); // ÏîÄ¿¸ùÄ¿Â¼
+// æºæ–‡ä»¶ç›®å½•
+moduleExports.staticRootDir = path.resolve(__dirname, '../../'); // é¡¹ç›®æ ¹ç›®å½•
 
-moduleExports.srcRootDir = path.resolve(moduleExports.staticRootDir, './src'); // ÏîÄ¿ÒµÎñ´úÂë¸ùÄ¿Â¼
+moduleExports.srcRootDir = path.resolve(moduleExports.staticRootDir, './src'); // é¡¹ç›®ä¸šåŠ¡ä»£ç æ ¹ç›®å½•
 
-moduleExports.pagesDir = path.resolve(moduleExports.srcRootDir, './pages'); // ´æ·Å¸÷¸öÒ³Ãæ¶ÀÓĞµÄ²¿·Ö£¬ÈçÈë¿ÚÎÄ¼ş¡¢Ö»ÓĞ¸ÃÒ³ÃæÊ¹ÓÃµ½µÄcss¡¢Ä£°åÎÄ¼şµÈ
+moduleExports.pagesDir = path.resolve(moduleExports.srcRootDir, './pages'); // å­˜æ”¾å„ä¸ªé¡µé¢ç‹¬æœ‰çš„éƒ¨åˆ†ï¼Œå¦‚å…¥å£æ–‡ä»¶ã€åªæœ‰è¯¥é¡µé¢ä½¿ç”¨åˆ°çš„cssã€æ¨¡æ¿æ–‡ä»¶ç­‰
 
-moduleExports.publicDir = path.resolve(moduleExports.srcRootDir, './public-resource'); // ´æ·Å¸÷¸öÒ³ÃæÊ¹ÓÃµ½µÄ¹«¹²×ÊÔ´
+moduleExports.publicDir = path.resolve(moduleExports.srcRootDir, './public-resource'); // å­˜æ”¾å„ä¸ªé¡µé¢ä½¿ç”¨åˆ°çš„å…¬å…±èµ„æº
 
-moduleExports.componentsDir = path.resolve(moduleExports.publicDir, './components'); // ´æ·Å×é¼ş£¬¿ÉÒÔÊÇ´¿HTML£¬Ò²¿ÉÒÔ°üº¬js/css/imageµÈ£¬¿´×Ô¼ºĞèÒª
+moduleExports.componentsDir = path.resolve(moduleExports.publicDir, './components'); // å­˜æ”¾ç»„ä»¶ï¼Œå¯ä»¥æ˜¯çº¯HTMLï¼Œä¹Ÿå¯ä»¥åŒ…å«js/css/imageç­‰ï¼Œçœ‹è‡ªå·±éœ€è¦
 
-// Éú³ÉÎÄ¼şÄ¿Â¼
-moduleExports.devBuildDir = path.resolve(moduleExports.staticRootDir, './build'); // ÊÇ¿ª·¢»·¾³ÏÂ ´æ·Å±àÒëºóÉú³ÉµÄËùÓĞ´úÂë¡¢×ÊÔ´£¨Í¼Æ¬¡¢×ÖÌåµÈ£¬ËäÈ»Ö»ÊÇ¼òµ¥µÄ´ÓÔ´Ä¿Â¼Ç¨ÒÆ¹ıÀ´£©
+// ç”Ÿæˆæ–‡ä»¶ç›®å½•
+moduleExports.devBuildDir = path.resolve(moduleExports.staticRootDir, './build'); // æ˜¯å¼€å‘ç¯å¢ƒä¸‹ å­˜æ”¾ç¼–è¯‘åç”Ÿæˆçš„æ‰€æœ‰ä»£ç ã€èµ„æºï¼ˆå›¾ç‰‡ã€å­—ä½“ç­‰ï¼Œè™½ç„¶åªæ˜¯ç®€å•çš„ä»æºç›®å½•è¿ç§»è¿‡æ¥ï¼‰
 
-// Éú³ÉÎÄ¼şÄ¿Â¼
-moduleExports.buildDir = path.resolve(moduleExports.staticRootDir, '../src/main/webapp'); // ´æ·Å±àÒëºóÉú³ÉµÄËùÓĞ´úÂë¡¢×ÊÔ´£¨Í¼Æ¬¡¢×ÖÌåµÈ£¬ËäÈ»Ö»ÊÇ¼òµ¥µÄ´ÓÔ´Ä¿Â¼Ç¨ÒÆ¹ıÀ´£©
+// ç”Ÿæˆæ–‡ä»¶ç›®å½•
+moduleExports.buildDir = path.resolve(moduleExports.staticRootDir, '../src/main/webapp'); // å­˜æ”¾ç¼–è¯‘åç”Ÿæˆçš„æ‰€æœ‰ä»£ç ã€èµ„æºï¼ˆå›¾ç‰‡ã€å­—ä½“ç­‰ï¼Œè™½ç„¶åªæ˜¯ç®€å•çš„ä»æºç›®å½•è¿ç§»è¿‡æ¥ï¼‰
 
-// Áí¸öÉú³ÉÎÄ¼şÄ¿Â¼
+// å¦ä¸ªç”Ÿæˆæ–‡ä»¶ç›®å½•
 moduleExports.privateBuildDir = path.resolve(moduleExports.buildDir, './WEB-INF');
 
 module.exports = moduleExports;

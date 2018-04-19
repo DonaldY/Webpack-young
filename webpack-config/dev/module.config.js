@@ -1,4 +1,4 @@
-var dirVars = require('../base/dir-vars.config.js');
+﻿var dirVars = require('../base/dir-vars.config.js');
 
 const moduleConfig = require('../inherit/module.config.js');
 

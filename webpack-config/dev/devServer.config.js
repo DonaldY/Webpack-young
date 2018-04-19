@@ -1,12 +1,12 @@
-var path = require('path');
+ï»¿var path = require('path');
 
 module.exports = {
     publicPath: '/',
     contentBase: './build',
     host: 'localhost',
-    port: 8081, // Ä¬ÈÏ8080
-    inline: true, // ¿ÉÒÔ¼à¿Øjs±ä»¯
-    hot: true, // ÈÈÆô¶¯
+    port: 8081, // é»˜è®¤8080
+    inline: true, // å¯ä»¥ç›‘æ§jså˜åŒ–
+    hot: true, // çƒ­å¯åŠ¨
     compress: true,
-    overlay: true // eslint ÔÚÒ³ÃæÉÏÏÔÊ¾
+    overlay: true // eslint åœ¨é¡µé¢ä¸Šæ˜¾ç¤º
 };

@@ -1,8 +1,9 @@
-var dirVars = require('../base/dir-vars.config.js');
+ï»¿var dirVars = require('../base/dir-vars.config.js');
 
 module.exports = {
     path: dirVars.devBuildDir,
     publicPath: '../../../',
-    filename: 'js/[name].js',    // [name]±íÊ¾entryÃ¿Ò»ÏîÖĞµÄkey£¬ÓÃÒÔÅúÁ¿Ö¸¶¨Éú³ÉºóÎÄ¼şµÄÃû³Æ
+    // ä¸èƒ½åŠ hashï¼Œä¸ç„¶HotModuleReplacementPluginå¯åŠ¨ä¸äº†ã€‚
+    filename: 'js/[name].js',    // [name]è¡¨ç¤ºentryæ¯ä¸€é¡¹ä¸­çš„keyï¼Œç”¨ä»¥æ‰¹é‡æŒ‡å®šç”Ÿæˆåæ–‡ä»¶çš„åç§°
     chunkFilename: '[id].[chunkhash].bundle.js'
 };

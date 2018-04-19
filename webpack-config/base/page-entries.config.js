@@ -1,9 +1,9 @@
-var glob = require('glob');
+ï»¿var glob = require('glob');
 var dirVars = require('./dir-vars.config.js');
 var options = {
-  cwd: dirVars.pagesDir, // ÔÚpagesÄ¿Â¼ÀïÕÒ
-  sync: true // ÕâÀï²»ÄÜÒì²½£¬Ö»ÄÜÍ¬²½
+  cwd: dirVars.pagesDir, // åœ¨pagesç›®å½•é‡Œæ‰¾
+  sync: true // è¿™é‡Œä¸èƒ½å¼‚æ­¥ï¼Œåªèƒ½åŒæ­¥
 };
-var globInstance = new glob.Glob('**/!(_)*/!(_)*', options); // ¿¼ÂÇµ½¶à¸öÒ³Ãæ¹²ÓÃHTMLµÈ×ÊÔ´µÄÇé¿ö£¬Ìø¹ıÒÔ'_'¿ªÍ·µÄÄ¿Â¼
+var globInstance = new glob.Glob('**/!(_)*/!(_)*', options); // è€ƒè™‘åˆ°å¤šä¸ªé¡µé¢å…±ç”¨HTMLç­‰èµ„æºçš„æƒ…å†µï¼Œè·³è¿‡ä»¥'_'å¼€å¤´çš„ç›®å½•
 
-module.exports = globInstance.found; // Ò»¸öÊı×é£¬ĞÎÈç['index/index', 'index/login', 'alert/index']
+module.exports = globInstance.found; // ä¸€ä¸ªæ•°ç»„ï¼Œå½¢å¦‚['index/index', 'index/login', 'alert/index']

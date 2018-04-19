@@ -1,4 +1,4 @@
-
+﻿
 var config = {
     entry: require('./webpack-config/entry.config.js'),
     

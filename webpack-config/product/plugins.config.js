@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+锘縱ar webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 var dirVars = require('../base/dir-vars.config.js');
@@ -8,7 +8,7 @@ var glob = require('glob-all');
 const pluginsConfig = require('../inherit/plugins.config.js');
 
 pluginsConfig.push(
-    /* 抽取出chunk的css */
+    /* 鎶藉彇鍑篶hunk鐨刢ss */
     new ExtractTextPlugin({
 	filename: '/css/[name].[hash:6].css',
 	allChunks: true
@@ -20,7 +20,7 @@ pluginsConfig.push(
 // 	paths: glob.sync([
 // 	    path.join(dirVars.pagesDir, '/**/*.html')
 // 	]),
-// 	/* 查看压缩信息 */
+// 	/* 鏌ョ湅鍘嬬缉淇℃伅 */
 // 	purifyOptions: {
 //             info: true,
 //             minify: false

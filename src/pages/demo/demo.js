@@ -3,7 +3,7 @@ require('./demo.css');
 
 console.log('This is demo...');
 
-$('#text').text('hahahah');
+// $('#text').text('hahahah');
 
 // let func = () => {};
 // const NUM = 45;

@@ -1,4 +1,4 @@
-var dirVars = require('../base/dir-vars.config.js');
+﻿var dirVars = require('../base/dir-vars.config.js');
 var ExtractTextPlugin   = require('extract-text-webpack-plugin');
 
 const moduleConfig = require('../inherit/module.config.js');
@@ -11,7 +11,7 @@ moduleConfig.rules.push({
             {
                 loader: 'css-loader',
                 options:{
-                    minimize: true //cssѹ��
+                    minimize: true //css压缩
                 }
             }
         ],

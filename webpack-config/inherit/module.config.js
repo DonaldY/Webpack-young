@@ -1,4 +1,4 @@
-var dirVars = require('../base/dir-vars.config.js');
+﻿var dirVars = require('../base/dir-vars.config.js');
 var eslintFormatter = require('eslint-friendly-formatter');
 
 module.exports = {
@@ -51,7 +51,7 @@ module.exports = {
 		    }
 		},
 		{
-		    // ѹ��
+		    // 压缩
 		    loader: 'img-loader',
 		    options: {
 			pngquant: {

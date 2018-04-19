@@ -1,4 +1,4 @@
-var path = require('path');
+ï»¿var path = require('path');
 var dirVars = require('./base/dir-vars.config.js');
 module.exports = {
     
@@ -6,6 +6,6 @@ module.exports = {
         
     },
 
-    // µ±requireµÄÄ£¿éÕÒ²»µ½Ê±£¬³¢ÊÔÌí¼ÓÕâĞ©ºó×ººó½øĞĞÑ°ÕÒ
+    // å½“requireçš„æ¨¡å—æ‰¾ä¸åˆ°æ—¶ï¼Œå°è¯•æ·»åŠ è¿™äº›åç¼€åè¿›è¡Œå¯»æ‰¾
     extensions: ['.js', '.css', '.less']
 };
