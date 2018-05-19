@@ -4,7 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 var dirVars = require('../base/dir-vars.config.js');
 var pageArr = require('../base/page-entries.config.js');
-
+var indexPagesArr = require('../base/indexPages-entries.config.js');
 
 var configPlugins = [
 
@@ -54,7 +54,12 @@ var configPlugins = [
 function isHtmlFile(str)  {  
    var objRegExp = /\.html/;
    return objRegExp.test(str);  
-} 
+}
+
+function isRoot(str) {
+    var objRegExp = /[^\/]*/;
+    return objRegExp.test(str);
+}
 
 pageArr.forEach((page) => {
     if (isHtmlFile(page)) {
@@ -63,6 +68,18 @@ pageArr.forEach((page) => {
 	    filename: `/WEB-INF/pages/${page}.html`,
 	    template: path.resolve(dirVars.pagesDir, `./${page}.html`),
 	    chunks: ['commons/common', page], // 公共文件需先导入
+	    xhtml: true
+	});
+	configPlugins.push(htmlPlugin);
+    }
+});
+
+indexPagesArr.forEach((page) => {
+    if (isHtmlFile(page) && page.indexOf('/') === -1) {
+	const htmlPlugin = new HtmlWebpackPlugin({
+	    filename: `/${page}`,
+	    template: path.resolve(dirVars.pagesDir, `./${page}`),
+	    chunks: [],
 	    xhtml: true
 	});
 	configPlugins.push(htmlPlugin);
