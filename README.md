@@ -2,12 +2,14 @@
 
 搭建之初为了在传统后端开发下进一步前后端分离（Java后端）
 
-<br/>
+
+
 ## 项目介绍
 
 本项目是一个Webpack多页面应用脚手架（当前使用Webpack版本3.8.1）
 
-<br/>
+
+
 ## 使用说明
 
 - 下载脚手架
@@ -30,7 +32,9 @@ npm run start # 启动服务
 ```
 npm run build
 ```
-<br/>
+
+
+
 ## demo学习
 
 在`src/pages/demo/`有个小demo，涉及
@@ -41,7 +45,9 @@ npm run build
 - babel等
 - 。。。
 
-<br/>
+
+
+
 ## 目录结构说明
 
 ```
@@ -73,7 +79,9 @@ npm run build
         └─imgs # 公用的图片资源
 ```
 
-<br/>
+
+
+
 ## 问题
 
 > 问题（不影响脚手架）：
@@ -82,7 +90,9 @@ npm run build
 > 相关资料：https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/529
 > https://www.jianshu.com/p/f30401c0b413
 
-<br/>
+
+
+
 ## 感谢
 1. 本项目在[项目](https://github.com/Array-Huang/webpack-seed) 学习改进并在3.8.1下实现。
 2. 感谢默默贡献的人！
